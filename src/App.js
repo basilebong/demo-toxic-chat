@@ -24,8 +24,6 @@ function App() {
       <a
         href="https://basilebong.com"
         class="btn --promo"
-        target="_blank"
-        rel="noopener"
       >
         Created by Basile Bong
       </a>
