@@ -1,3 +1,9 @@
+# Demo Toxic Chat
+
+This is a demo of my blog post and dev.to article on "Detect toxic language with TensorFlow.js"
+
+[More info here](https://dev.to/basilebong/detect-toxic-language-with-tensorflow-js) and on [my website](https://basilebong.com).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

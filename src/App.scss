@@ -1,0 +1,127 @@
+$light: #efefef;
+$primary: #0fb6ed;
+$white: #ffffff;
+$black: #000;
+$box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.btn {
+  &.--promo {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: $white;
+    box-shadow: $box-shadow;
+    padding: 0.5rem 1rem;
+    color: $black;
+    text-decoration: none;
+    border-radius: 2rem;
+    transition: 0.3s ease;
+
+    &:hover {
+      background: $primary;
+      color: $white;
+    }
+
+    &:active {
+      background: darken($primary, 10%);
+      color: $white;
+    }
+  }
+}
+
+.loader {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  &__container {
+    flex: 1;
+    background: $light;
+    padding: 2.5rem;
+    overflow-y: scroll;
+  }
+
+  &__message {
+    background: $white;
+    border: 1px solid $light;
+    padding: 1rem;
+    width: 80%;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+
+    &__text {
+      flex: 1;
+      margin: 0 1rem;
+    }
+
+    &__avatar {
+      border-radius: 50%;
+      height: 35px;
+      width: 35px;
+      border: 2px solid $primary;
+      display: block;
+      box-shadow: $box-shadow;
+    }
+  }
+
+  &__form {
+    display: flex;
+  }
+
+  &__input {
+    flex: 1;
+    padding: 1rem;
+    border-radius: 0;
+    border: 1px solid $light;
+  }
+
+  &__submit {
+    background-color: $primary;
+    border: none;
+    padding: 0 1rem;
+    color: $white;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}
+
+.badge {
+  font-size: 14px;
+  color: $white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
+
+  &.--toxic {
+    background: red;
+  }
+
+  &.--friendly {
+    background: green;
+  }
+
+  &.--loading {
+    background: $primary;
+  }
+}
